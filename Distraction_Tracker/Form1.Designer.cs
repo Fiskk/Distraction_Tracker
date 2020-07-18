@@ -101,7 +101,7 @@
             this.AverageAttention.Name = "AverageAttention";
             this.AverageAttention.Size = new System.Drawing.Size(111, 114);
             this.AverageAttention.TabIndex = 0;
-            this.AverageAttention.Text = "0";
+            this.AverageAttention.Text = "00:00:00";
             this.AverageAttention.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AverageAttention.Click += new System.EventHandler(this.AverageAttention_Click);
             // 
@@ -112,7 +112,7 @@
             this.longestAttention.Name = "longestAttention";
             this.longestAttention.Size = new System.Drawing.Size(115, 114);
             this.longestAttention.TabIndex = 1;
-            this.longestAttention.Text = "0";
+            this.longestAttention.Text = "00:00:00";
             this.longestAttention.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.longestAttention.Click += new System.EventHandler(this.longestAttention_Click);
             // 
@@ -238,7 +238,7 @@
             this.ClientSize = new System.Drawing.Size(534, 311);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "DistractionTracker";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
