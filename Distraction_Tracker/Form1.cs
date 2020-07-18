@@ -47,21 +47,6 @@ namespace Distraction_Tracker
             this.sinceLastElapsedTime.Text = this.sinceLastElapsed;
         }
 
-        private void distractionCount_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AverageAttention_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void longestAttention_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void resetAverage_Click(object sender, EventArgs e)
         {
 
@@ -87,11 +72,6 @@ namespace Distraction_Tracker
             // Reset stopwatches
             this.stopWatchOverall.Restart();
             this.stopWatchSinceLast.Restart();
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 

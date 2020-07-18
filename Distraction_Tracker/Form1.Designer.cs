@@ -69,7 +69,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.51447F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(534, 311);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // flowLayoutPanel1
             // 
@@ -92,7 +91,6 @@
             this.distractionCount.TabIndex = 2;
             this.distractionCount.Text = "0";
             this.distractionCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.distractionCount.Click += new System.EventHandler(this.distractionCount_Click);
             // 
             // AverageAttention
             // 
@@ -103,7 +101,6 @@
             this.AverageAttention.TabIndex = 0;
             this.AverageAttention.Text = "00:00:00";
             this.AverageAttention.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.AverageAttention.Click += new System.EventHandler(this.AverageAttention_Click);
             // 
             // longestAttention
             // 
@@ -114,7 +111,6 @@
             this.longestAttention.TabIndex = 1;
             this.longestAttention.Text = "00:00:00";
             this.longestAttention.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.longestAttention.Click += new System.EventHandler(this.longestAttention_Click);
             // 
             // flowLayoutPanel2
             // 
