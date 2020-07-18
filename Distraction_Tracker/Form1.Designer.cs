@@ -208,20 +208,22 @@
             // 
             // totalElapsedTime
             // 
-            this.totalElapsedTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalElapsedTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalElapsedTime.Location = new System.Drawing.Point(3, 0);
             this.totalElapsedTime.Name = "totalElapsedTime";
             this.totalElapsedTime.Size = new System.Drawing.Size(378, 89);
             this.totalElapsedTime.TabIndex = 0;
+            this.totalElapsedTime.Text = "N/A";
             this.totalElapsedTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // sinceLastElapsedTime
             // 
-            this.sinceLastElapsedTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sinceLastElapsedTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sinceLastElapsedTime.Location = new System.Drawing.Point(3, 89);
             this.sinceLastElapsedTime.Name = "sinceLastElapsedTime";
             this.sinceLastElapsedTime.Size = new System.Drawing.Size(378, 89);
             this.sinceLastElapsedTime.TabIndex = 1;
+            this.sinceLastElapsedTime.Text = "N/A";
             this.sinceLastElapsedTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
