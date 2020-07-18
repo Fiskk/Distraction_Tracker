@@ -115,9 +115,13 @@ namespace Distraction_Tracker
                 this.longestAttention.Text = this.stopWatchSinceLast.Elapsed.ToString("hh\\:mm\\:ss");
             }
 
-            this.distratcionDurations.Add(this.stopWatchSinceLast.Elapsed.TotalSeconds;
+            // Add elapsed duration since last distraction to the list 
+            this.distratcionDurations.Add(this.stopWatchSinceLast.Elapsed.TotalSeconds);
 
-            TimeSpan averageDuration = this.distratcionDurations.Count > 0 ? this.distratcionDurations.Average() : 0.0;
+            Double averageDuration = this.distratcionDurations.Count > 0 ? this.distratcionDurations.Average() : 0.0;
+            TimeSpan averageTimespanDuration = new TimeSpan(Convert.ToInt32(averageDuration));
+
+            AverageAttention.Text = averageTimespanDuration.ToString("hh\\:mm\\:ss");
 
             this.stopWatchSinceLast.Restart();
         }
