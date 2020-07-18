@@ -129,7 +129,8 @@ namespace Distraction_Tracker
 
             // Calculate average attention duration from List and convert back into Timespan
             Double averageDuration = this.distractionDurations.Count > 0 ? this.distractionDurations.Average() : 0.0;
-            TimeSpan averageTimespanDuration = new TimeSpan(Convert.ToInt64(averageDuration));
+            TimeSpan averageTimespanDuration = new TimeSpan();
+            averageTimespanDuration = TimeSpan.FromSeconds(averageDuration);
 
             // Set AverageAttention label text property
             AverageAttention.Text = averageTimespanDuration.ToString("hh\\:mm\\:ss");
