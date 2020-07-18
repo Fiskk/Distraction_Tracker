@@ -75,11 +75,11 @@ namespace Distraction_Tracker
 
             // Reset Average duration tracker
             this.averageDuration = 0;
-            this.AverageAttention.Text = this.averageDuration.ToString();
+            this.AverageAttention.Text = "00:00:00";
 
             // Reset longest duration counter
             this.currentLongest = new TimeSpan(0, 0, 0);
-            this.longestAttention.Text = Convert.ToString(0);
+            this.longestAttention.Text = "00:00:00";
 
             // Empty duration list
             distractionDurations = new List<Double>();
