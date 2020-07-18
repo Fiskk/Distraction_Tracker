@@ -84,7 +84,7 @@
             // 
             // distractionCount
             // 
-            this.distractionCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.distractionCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.distractionCount.ForeColor = System.Drawing.Color.OrangeRed;
             this.distractionCount.Location = new System.Drawing.Point(3, 0);
             this.distractionCount.Name = "distractionCount";
@@ -131,7 +131,7 @@
             // 
             // resetAverage
             // 
-            this.resetAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resetAverage.Location = new System.Drawing.Point(3, 3);
             this.resetAverage.Name = "resetAverage";
             this.resetAverage.Size = new System.Drawing.Size(138, 54);
@@ -142,7 +142,7 @@
             // 
             // resetAll
             // 
-            this.resetAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resetAll.Location = new System.Drawing.Point(3, 63);
             this.resetAll.Name = "resetAll";
             this.resetAll.Size = new System.Drawing.Size(138, 54);
@@ -164,7 +164,7 @@
             // 
             // startButton
             // 
-            this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startButton.Location = new System.Drawing.Point(3, 3);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(138, 54);
@@ -175,7 +175,7 @@
             // 
             // stopButton
             // 
-            this.stopButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stopButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stopButton.Location = new System.Drawing.Point(3, 63);
             this.stopButton.Name = "stopButton";
             this.stopButton.Size = new System.Drawing.Size(138, 54);
@@ -186,7 +186,7 @@
             // 
             // distractionButton
             // 
-            this.distractionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.distractionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.distractionButton.ForeColor = System.Drawing.Color.Red;
             this.distractionButton.Location = new System.Drawing.Point(3, 123);
             this.distractionButton.Name = "distractionButton";
@@ -208,7 +208,7 @@
             // 
             // totalElapsedTime
             // 
-            this.totalElapsedTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalElapsedTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalElapsedTime.Location = new System.Drawing.Point(3, 0);
             this.totalElapsedTime.Name = "totalElapsedTime";
             this.totalElapsedTime.Size = new System.Drawing.Size(378, 89);
@@ -218,7 +218,7 @@
             // 
             // sinceLastElapsedTime
             // 
-            this.sinceLastElapsedTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sinceLastElapsedTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sinceLastElapsedTime.Location = new System.Drawing.Point(3, 89);
             this.sinceLastElapsedTime.Name = "sinceLastElapsedTime";
             this.sinceLastElapsedTime.Size = new System.Drawing.Size(378, 89);
