@@ -32,18 +32,14 @@ namespace Distraction_Tracker
         {
             InitializeComponent();
 
-            //string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
-            //ts.Hours, ts.Minutes, ts.Seconds,
-            //ts.Milliseconds / 10);
-
+            // Start Stopwatches when program begins
             stopWatchOverall.Start();
             stopWatchSinceLast.Start();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            // This will need to send a row to the local DB every ~30 seconds
-
+            // Get elapsed times and set labels equal to stopwatches each tick of timer
             this.currentElapsed = stopWatchOverall.Elapsed.ToString("hh\\:mm\\:ss");
             this.sinceLastElapsed = stopWatchSinceLast.Elapsed.ToString("hh\\:mm\\:ss");
 
@@ -88,11 +84,9 @@ namespace Distraction_Tracker
             // Empty duration list
             distractionDurations = new List<Double>();
 
-            this.stopWatchOverall.Stop();
-            this.stopWatchSinceLast.Stop();
-
-            this.stopWatchOverall.Start();
-            this.stopWatchSinceLast.Start();
+            // Reset stopwatches
+            this.stopWatchOverall.Restart();
+            this.stopWatchSinceLast.Restart();
 
         }
 
