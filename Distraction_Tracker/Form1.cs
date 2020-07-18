@@ -25,6 +25,8 @@ namespace Distraction_Tracker
         TimeSpan averageTimeSinceLast = new TimeSpan(0, 0, 0);
         TimeSpan currentLongest = new TimeSpan(0, 0, 0);
 
+        List<TimeSpan> distratcionDurations = new List<TimeSpan>();
+
         public Form1()
         {
             InitializeComponent();
@@ -104,11 +106,16 @@ namespace Distraction_Tracker
 
             this.distractionCount.Text = this.numDistractions.ToString();
 
+            // Compares the longest elapsed time since the last distraction
+            // to the current elapsed time of the sinceLastDistraction stopwatch
+            // and sets the current longest elapsed time counter accordingly.
             if ((TimeSpan.Compare(stopWatchSinceLast.Elapsed, this.currentLongest)) >= 0)
             {
                 this.currentLongest = stopWatchSinceLast.Elapsed;
                 this.longestAttention.Text = this.stopWatchSinceLast.Elapsed.ToString("hh\\:mm\\:ss");
             }
+
+            this.distratcionDurations.Add(this.stopWatchSinceLast.Elapsed);
 
             this.stopWatchSinceLast.Restart();
         }
