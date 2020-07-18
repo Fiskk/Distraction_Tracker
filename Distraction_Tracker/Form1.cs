@@ -25,7 +25,8 @@ namespace Distraction_Tracker
         TimeSpan averageTimeSinceLast = new TimeSpan(0, 0, 0);
         TimeSpan currentLongest = new TimeSpan(0, 0, 0);
 
-        List<Double> distratcionDurations = new List<Double>();
+        List<Double> distractionDurations = new List<Double>();
+        Double averageDuration;
 
         public Form1()
         {
@@ -72,8 +73,20 @@ namespace Distraction_Tracker
 
         private void resetAll_Click(object sender, EventArgs e)
         {
+            // Reset distraction counter
             this.numDistractions = 0;
             this.distractionCount.Text = this.numDistractions.ToString();
+
+            // Reset Average duration tracker
+            this.averageDuration = 0;
+            this.AverageAttention.Text = this.averageDuration.ToString();
+
+            // Reset longest duration counter
+            this.currentLongest = new TimeSpan(0, 0, 0);
+            this.longestAttention.Text = Convert.ToString(0);
+
+            // Empty duration list
+            distractionDurations = new List<Double>();
 
             this.stopWatchOverall.Stop();
             this.stopWatchSinceLast.Stop();
@@ -90,12 +103,14 @@ namespace Distraction_Tracker
 
         private void startButton_Click(object sender, EventArgs e)
         {
+            // Start timers after having paused them
             stopWatchOverall.Start();
             stopWatchSinceLast.Start();
         }
 
         private void stopButton_Click(object sender, EventArgs e)
         {
+            // Pause timers
             stopWatchSinceLast.Stop();
             stopWatchOverall.Stop();
         }
@@ -116,11 +131,13 @@ namespace Distraction_Tracker
             }
 
             // Add elapsed duration since last distraction to the list 
-            this.distratcionDurations.Add(this.stopWatchSinceLast.Elapsed.TotalSeconds);
+            this.distractionDurations.Add(this.stopWatchSinceLast.Elapsed.TotalSeconds);
 
-            Double averageDuration = this.distratcionDurations.Count > 0 ? this.distratcionDurations.Average() : 0.0;
+            // Calculate average attention duration from List and convert back into Timespan
+            Double averageDuration = this.distractionDurations.Count > 0 ? this.distractionDurations.Average() : 0.0;
             TimeSpan averageTimespanDuration = new TimeSpan(Convert.ToInt32(averageDuration));
 
+            // Set AverageAttention label text property
             AverageAttention.Text = averageTimespanDuration.ToString("hh\\:mm\\:ss");
 
             this.stopWatchSinceLast.Restart();
