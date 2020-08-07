@@ -26,7 +26,7 @@ namespace Distraction_Tracker
         TimeSpan currentLongest = new TimeSpan(0, 0, 0);
 
         List<Double> distractionDurations = new List<Double>();
-        Double averageDuration;
+        //Double averageDuration;
 
         public Form1()
         {
@@ -59,7 +59,7 @@ namespace Distraction_Tracker
             this.distractionCount.Text = this.numDistractions.ToString();
 
             // Reset Average duration tracker
-            this.averageDuration = 0;
+            //this.averageDuration = 0;
             this.AverageAttention.Text = "00:00:00";
 
             // Reset longest duration counter
